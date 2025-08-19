@@ -3,22 +3,22 @@ pipeline{
 stages{
  stage('checkout code'){
 steps{
-git 'https://github.com/srivallikottamasu/test.git'
+git 'https://github.com/srivallikottamasu/test'
 }
  }
 stage('build'){
 steps{
-bat 'echo "building the app"'
+sh 'echo "building the app"'
 }
 }
 stage('test'){
 steps{
-bat 'echo "testing the app"'
+sh'echo "testing the app"'
 }
 }
 stage('deploy'){
 steps{
-bat 'echo "deploying the app"'
+sh'echo "deploying the app"'
 }
 }
 }
