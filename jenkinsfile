@@ -1,0 +1,25 @@
+pipeline{
+ agent any
+stages{
+ stage('checkout code'){
+steps{
+git 'https://github.com/srivallikottamasu/test'
+}
+ }
+stage('build'){
+steps{
+bat 'echo "building the app"'
+}
+}
+stage('test'){
+steps{
+bat 'echo "testing the app"'
+}
+}
+stage('deploy'){
+steps{
+bat 'echo "deploying the app"'
+}
+}
+}
+}
