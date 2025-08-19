@@ -3,7 +3,7 @@ pipeline{
 stages{
  stage('checkout code'){
 steps{
-git 'https://github.com/srivallikottamasu/test'
+git branch: 'main', url: 'https://github.com/srivallikottamasu/test'
 }
  }
 stage('build'){
